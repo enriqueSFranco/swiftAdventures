@@ -9,7 +9,20 @@ import SwiftUI
 
 struct CircleImage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image("Heroes")
+                .resizable()
+                .frame(width: 250, height: 150)
+                .aspectRatio(contentMode: .fit)
+                .clipShape(Circle())
+                .overlay {
+                    Circle().stroke(.white, lineWidth: 4)
+                }
+                .shadow(radius: 7)
+            Text("spider man")
+                .foregroundColor(.red)
+                .fontWeight(.bold)
+        }
     }
 }
 
