@@ -8,26 +8,28 @@
 import SwiftUI
 
 struct CircleImage: View {
+    var nameImage: String
+    
     var body: some View {
         VStack {
-            Image("Heroes")
+            Image(nameImage)
                 .resizable()
-                .frame(width: 250, height: 150)
+                .frame(width: 150, height: 150)
                 .aspectRatio(contentMode: .fit)
                 .clipShape(Circle())
                 .overlay {
                     Circle().stroke(.white, lineWidth: 4)
                 }
                 .shadow(radius: 7)
-            Text("spider man")
-                .foregroundColor(.red)
+            Text(nameImage)
                 .fontWeight(.bold)
+                .textCase(.uppercase)
         }
     }
 }
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage()
+        CircleImage(nameImage: "spiderman")
     }
 }
