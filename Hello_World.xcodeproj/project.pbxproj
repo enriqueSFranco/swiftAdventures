@@ -14,6 +14,7 @@
 		C00F4D9A2AAFCBCF00B43D16 /* Hello_WorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F4D992AAFCBCF00B43D16 /* Hello_WorldTests.swift */; };
 		C00F4DA42AAFCBCF00B43D16 /* Hello_WorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F4DA32AAFCBCF00B43D16 /* Hello_WorldUITests.swift */; };
 		C00F4DA62AAFCBCF00B43D16 /* Hello_WorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F4DA52AAFCBCF00B43D16 /* Hello_WorldUITestsLaunchTests.swift */; };
+		C00F4DB52AAFDCE400B43D16 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F4DB42AAFDCE400B43D16 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C00F4D9F2AAFCBCF00B43D16 /* Hello_WorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hello_WorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00F4DA32AAFCBCF00B43D16 /* Hello_WorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_WorldUITests.swift; sourceTree = "<group>"; };
 		C00F4DA52AAFCBCF00B43D16 /* Hello_WorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_WorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C00F4DB42AAFDCE400B43D16 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				C00F4D8A2AAFCBCE00B43D16 /* ContentView.swift */,
 				C00F4D8C2AAFCBCF00B43D16 /* Assets.xcassets */,
 				C00F4D8E2AAFCBCF00B43D16 /* Preview Content */,
+				C00F4DB42AAFDCE400B43D16 /* CircleImage.swift */,
 			);
 			path = Hello_World;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				C00F4D8B2AAFCBCE00B43D16 /* ContentView.swift in Sources */,
 				C00F4D892AAFCBCE00B43D16 /* Hello_WorldApp.swift in Sources */,
+				C00F4DB52AAFDCE400B43D16 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
