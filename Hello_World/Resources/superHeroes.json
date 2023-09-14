@@ -5,6 +5,7 @@
         "powers": ["Super strength", "Flight", "Heat vision"],
         "secretIdentity": "Clark Kent",
         "imageName": "superman",
+        "isFavorite": false,
         "description": "Superman es un icónico superhéroe de DC Comics. Es conocido por su fuerza sobrehumana, su capacidad de volar y su visión de calor. Su verdadera identidad es Clark Kent, un reportero del Daily Planet."
     },
     {
@@ -13,6 +14,7 @@
         "powers": ["Intelligence", "Combat skills", "Advanced technology"],
         "secretIdentity": "Bruce Wayne",
         "imageName": "batman",
+        "isFavorite": false,
         "description": "Batman es otro icónico superhéroe de DC Comics. A diferencia de Superman, Batman no tiene poderes sobrehumanos, pero es conocido por su inteligencia, habilidades de combate y su arsenal de tecnología avanzada. Su verdadera identidad es Bruce Wayne, un multimillonario filántropo."
     },
     {
@@ -21,6 +23,7 @@
         "powers": ["Superhuman strength", "Immortality", "Lasso of Truth"],
         "secretIdentity": "Diana Prince",
         "imageName": "wonder-woman",
+        "isFavorite": true,
         "description": "Wonder Woman es una poderosa superhéroe de DC Comics. Posee una fuerza sobrehumana, inmortalidad y el Lazo de la Verdad, que puede obligar a la verdad a cualquiera que lo toque. Su verdadera identidad es Diana Prince, una princesa amazona de Themyscira."
     }
 ]

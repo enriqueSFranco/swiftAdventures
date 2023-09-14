@@ -14,6 +14,7 @@ struct SuperHero: Codable, Identifiable {
     var secretIdentity: String
     var imageName: String
     var description: String
+    var isFavorite: Bool
 }
 
 
