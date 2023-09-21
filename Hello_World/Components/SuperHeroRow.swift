@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct SuperHeroRow: View {
+struct SuperHeroRow: View { // SuperHeroRow se ajusta al protocolo View para poder pintar en pantall
     var superHero: SuperHero // <- propiedad almacenada
     
-    var body: some View {
+    var body: some View { // propiedad calculada
         HStack {
             Image("\(superHero.imageName)")
                 .resizable()
