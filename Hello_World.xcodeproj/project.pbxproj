@@ -25,6 +25,7 @@
 		C09E3B702ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E3B6F2ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift */; };
 		C0AF13742AAFE5DF00422207 /* SuperHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF13732AAFE5DF00422207 /* SuperHeroes.swift */; };
 		C0AF13762AAFE62000422207 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF13752AAFE62000422207 /* SuperHero.swift */; };
+		C0FD91CE2ABD08E900330405 /* StacksViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FD91CD2ABD08E900330405 /* StacksViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		C09E3B6F2ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingStateToUserInterfaceControls.swift; sourceTree = "<group>"; };
 		C0AF13732AAFE5DF00422207 /* SuperHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroes.swift; sourceTree = "<group>"; };
 		C0AF13752AAFE62000422207 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
+		C0FD91CD2ABD08E900330405 /* StacksViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				C00F4D8A2AAFCBCE00B43D16 /* ContentView.swift */,
 				C08B6ECB2AB103E40057B6AD /* SuperHeroDetail.swift */,
+				C0FD91CD2ABD08E900330405 /* StacksViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C08B6ECC2AB103E40057B6AD /* SuperHeroDetail.swift in Sources */,
+				C0FD91CE2ABD08E900330405 /* StacksViews.swift in Sources */,
 				C043CEC82AAFF2EC008D0DEA /* SuperHeroRow.swift in Sources */,
 				C0AF13762AAFE62000422207 /* SuperHero.swift in Sources */,
 				C00F4D8B2AAFCBCE00B43D16 /* ContentView.swift in Sources */,
