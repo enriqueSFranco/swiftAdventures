@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct SuperHeroRow: View {
+struct SuperHeroRow: View { // SuperHeroRow se ajusta al protocolo View para poder pintar en pantall
     var superHero: SuperHero // <- propiedad almacenada
     
-    var body: some View {
+    var body: some View { // propiedad calculada
         HStack {
             Image("\(superHero.imageName)")
                 .resizable()
@@ -20,16 +20,20 @@ struct SuperHeroRow: View {
                 Text("\(superHero.name)")
                 Text("\(superHero.secretIdentity)")
                 Text("Powers: \(superHero.powers.joined(separator: ","))")
+                if superHero.isFavorite { // incluimos un punto de vista condicional
+                    Image(systemName: "star.fill")
+                }
             }
         }
     }
 }
 
 struct SuperHeroRow_Previews: PreviewProvider {
+    static var data = ModelData().superHeroes
     static var previews: some View {
         Group {
-            SuperHeroRow(superHero: dataSuperHeroes[0])
-            SuperHeroRow(superHero: dataSuperHeroes[1])
+            SuperHeroRow(superHero: data[0])
+            SuperHeroRow(superHero: data[1])
         }
         .previewLayout(.fixed(width: 300, height: 200))
     }

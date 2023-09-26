@@ -6,8 +6,12 @@
 //
 
 import Foundation
+import Combine
 
-var dataSuperHeroes: [SuperHero] = load("superHeroes.json")
+final class ModelData: ObservableObject {
+    // Un objeto observable necesita publicar cualquier cambio en sus datos, para que sus suscriptores puedan recoger el cambio.
+    @Published var superHeroes: [SuperHero] = load("superHeroes.json")
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
