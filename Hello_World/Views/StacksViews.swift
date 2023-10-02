@@ -130,13 +130,9 @@ struct StacksViews: View {
                 VStack(spacing: 20) {
                     ForEach(0..<3) { flag in
                         Button {
-//                            TODO: metodo para indicar si la respuesta es correcta
                             flagTapped(flag)
                         } label: {
-                            Image(countries[flag])
-                                .renderingMode(.original)
-                                .clipShape(Capsule())
-                                .shadow(radius: 5)
+                            FlagImage(flag: countries[flag])
                         }
                     }
                 }
@@ -167,11 +163,17 @@ struct StacksViews: View {
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }
-    
-//    func signIn () {
-//        print("iniciando sesion")
-//    }
-    
+}
+
+struct FlagImage: View {
+    var flag: String
+
+    var body: some View {
+        Image(flag)
+            .renderingMode(.original)
+            .clipShape(Capsule())
+            .shadow(radius: 5)
+    }
 }
 
 struct StacksViews_Previews: PreviewProvider {

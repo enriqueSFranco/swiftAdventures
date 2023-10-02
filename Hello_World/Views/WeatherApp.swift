@@ -9,32 +9,45 @@ import SwiftUI
 
 struct WeatherApp: View {
     var body: some View {
-        ZStack {
-//            TODO: refactor
-            BackgroundView(colorsArray: [.blue, Color("lightBlue")])
-            WeatherContent()
-        }
+        WeatherContent()
     }
 }
 
 struct WeatherContent: View {
+    @State private var isNight = false
+
     var body: some View {
-        VStack {
-            HeaderView()
-            Spacer()
-            WeatherSummaryView()
-            Spacer()
-            WeatherDaysList()
-            Spacer()
-            Footer()
+        ZStack {
+            BackgroundView(colorsArray: isNight ? [.black, .gray] : [.blue, Color("lightBlue")])
+            VStack {
+                HeaderView()
+                Spacer()
+                WeatherSummaryView(isNight: $isNight)
+                Spacer()
+                WeatherDaysList()
+                Spacer()
+                Button {
+                    isNight.toggle()
+                } label: {
+                    Text("change time of day")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(isNight ? .black : .blue)
+                        .cornerRadius(10)
+                }
+                .shadow(color: isNight ? .gray : .blue, radius: 15, y: 5)
+                Spacer()
+            }
         }
     }
 }
 
 struct WeatherSummaryView: View {
+    @Binding var isNight: Bool
+    
     var body: some View {
         VStack(spacing: 0) {
-            Image(systemName: "cloud.sun.fill")
+            Image(systemName: isNight ? "moon.stars.fill" : "cloud.sun.fill")
                 .renderingMode(.original)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -108,14 +121,6 @@ struct BackgroundView: View {
         LinearGradient(gradient: Gradient(colors: colorsArray),
                        startPoint: .topLeading, endPoint: .bottomTrailing)
             .ignoresSafeArea()
-    }
-}
-
-struct Footer: View {
-    var body: some View {
-        Button("change time of day") {
-        }
-        .buttonStyle(.bordered)
     }
 }
 

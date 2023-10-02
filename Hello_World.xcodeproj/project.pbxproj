@@ -28,6 +28,7 @@
 		C09E3B702ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E3B6F2ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift */; };
 		C0AF13742AAFE5DF00422207 /* SuperHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF13732AAFE5DF00422207 /* SuperHeroes.swift */; };
 		C0AF13762AAFE62000422207 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF13752AAFE62000422207 /* SuperHero.swift */; };
+		C0E0EE312ACB6E0F0010823E /* BetterRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0EE302ACB6E0F0010823E /* BetterRest.swift */; };
 		C0FD91CE2ABD08E900330405 /* StacksViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FD91CD2ABD08E900330405 /* StacksViews.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		C09E3B6F2ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingStateToUserInterfaceControls.swift; sourceTree = "<group>"; };
 		C0AF13732AAFE5DF00422207 /* SuperHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroes.swift; sourceTree = "<group>"; };
 		C0AF13752AAFE62000422207 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
+		C0E0EE302ACB6E0F0010823E /* BetterRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRest.swift; sourceTree = "<group>"; };
 		C0FD91CD2ABD08E900330405 /* StacksViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +185,7 @@
 				C08B6ECB2AB103E40057B6AD /* SuperHeroDetail.swift */,
 				C0FD91CD2ABD08E900330405 /* StacksViews.swift */,
 				C016D24F2ABE1F91000B0C4D /* WeatherApp.swift */,
+				C0E0EE302ACB6E0F0010823E /* BetterRest.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				C00F4D8B2AAFCBCE00B43D16 /* ContentView.swift in Sources */,
 				C0AF13742AAFE5DF00422207 /* SuperHeroes.swift in Sources */,
 				C00F4D892AAFCBCE00B43D16 /* Hello_WorldApp.swift in Sources */,
+				C0E0EE312ACB6E0F0010823E /* BetterRest.swift in Sources */,
 				C03934E72AB3B66200778BC7 /* FavoriteButton.swift in Sources */,
 				C016D2522ABE3252000B0C4D /* WeatherDay.swift in Sources */,
 				C09E3B702ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift in Sources */,
