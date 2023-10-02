@@ -15,6 +15,9 @@
 		C00F4DA42AAFCBCF00B43D16 /* Hello_WorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F4DA32AAFCBCF00B43D16 /* Hello_WorldUITests.swift */; };
 		C00F4DA62AAFCBCF00B43D16 /* Hello_WorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F4DA52AAFCBCF00B43D16 /* Hello_WorldUITestsLaunchTests.swift */; };
 		C00F4DB52AAFDCE400B43D16 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F4DB42AAFDCE400B43D16 /* CircleImage.swift */; };
+		C016D24E2ABE1F30000B0C4D /* FlagList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016D24D2ABE1F30000B0C4D /* FlagList.swift */; };
+		C016D2502ABE1F91000B0C4D /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016D24F2ABE1F91000B0C4D /* WeatherApp.swift */; };
+		C016D2522ABE3252000B0C4D /* WeatherDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C016D2512ABE3252000B0C4D /* WeatherDay.swift */; };
 		C03934E72AB3B66200778BC7 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03934E62AB3B66200778BC7 /* FavoriteButton.swift */; };
 		C043CEC82AAFF2EC008D0DEA /* SuperHeroRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043CEC72AAFF2EB008D0DEA /* SuperHeroRow.swift */; };
 		C043CECA2AAFF6C0008D0DEA /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C043CEC92AAFF6C0008D0DEA /* ModelData.swift */; };
@@ -25,6 +28,7 @@
 		C09E3B702ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09E3B6F2ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift */; };
 		C0AF13742AAFE5DF00422207 /* SuperHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF13732AAFE5DF00422207 /* SuperHeroes.swift */; };
 		C0AF13762AAFE62000422207 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF13752AAFE62000422207 /* SuperHero.swift */; };
+		C0E0EE312ACB6E0F0010823E /* BetterRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0EE302ACB6E0F0010823E /* BetterRest.swift */; };
 		C0FD91CE2ABD08E900330405 /* StacksViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FD91CD2ABD08E900330405 /* StacksViews.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +61,9 @@
 		C00F4DA32AAFCBCF00B43D16 /* Hello_WorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_WorldUITests.swift; sourceTree = "<group>"; };
 		C00F4DA52AAFCBCF00B43D16 /* Hello_WorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_WorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C00F4DB42AAFDCE400B43D16 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		C016D24D2ABE1F30000B0C4D /* FlagList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagList.swift; sourceTree = "<group>"; };
+		C016D24F2ABE1F91000B0C4D /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
+		C016D2512ABE3252000B0C4D /* WeatherDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDay.swift; sourceTree = "<group>"; };
 		C03934E62AB3B66200778BC7 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		C043CEC72AAFF2EB008D0DEA /* SuperHeroRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroRow.swift; sourceTree = "<group>"; };
 		C043CEC92AAFF6C0008D0DEA /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -67,6 +74,7 @@
 		C09E3B6F2ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingStateToUserInterfaceControls.swift; sourceTree = "<group>"; };
 		C0AF13732AAFE5DF00422207 /* SuperHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroes.swift; sourceTree = "<group>"; };
 		C0AF13752AAFE62000422207 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
+		C0E0EE302ACB6E0F0010823E /* BetterRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRest.swift; sourceTree = "<group>"; };
 		C0FD91CD2ABD08E900330405 /* StacksViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +172,8 @@
 				C083162C2ABB7BE200603177 /* Form.swift */,
 				C09E3B6D2ABB88A40058F125 /* State.swift */,
 				C09E3B6F2ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift */,
+				C016D24D2ABE1F30000B0C4D /* FlagList.swift */,
+				C016D2512ABE3252000B0C4D /* WeatherDay.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -174,6 +184,8 @@
 				C00F4D8A2AAFCBCE00B43D16 /* ContentView.swift */,
 				C08B6ECB2AB103E40057B6AD /* SuperHeroDetail.swift */,
 				C0FD91CD2ABD08E900330405 /* StacksViews.swift */,
+				C016D24F2ABE1F91000B0C4D /* WeatherApp.swift */,
+				C0E0EE302ACB6E0F0010823E /* BetterRest.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,16 +339,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C08B6ECC2AB103E40057B6AD /* SuperHeroDetail.swift in Sources */,
+				C016D2502ABE1F91000B0C4D /* WeatherApp.swift in Sources */,
 				C0FD91CE2ABD08E900330405 /* StacksViews.swift in Sources */,
 				C043CEC82AAFF2EC008D0DEA /* SuperHeroRow.swift in Sources */,
 				C0AF13762AAFE62000422207 /* SuperHero.swift in Sources */,
 				C00F4D8B2AAFCBCE00B43D16 /* ContentView.swift in Sources */,
 				C0AF13742AAFE5DF00422207 /* SuperHeroes.swift in Sources */,
 				C00F4D892AAFCBCE00B43D16 /* Hello_WorldApp.swift in Sources */,
+				C0E0EE312ACB6E0F0010823E /* BetterRest.swift in Sources */,
 				C03934E72AB3B66200778BC7 /* FavoriteButton.swift in Sources */,
+				C016D2522ABE3252000B0C4D /* WeatherDay.swift in Sources */,
 				C09E3B702ABB8C080058F125 /* BindingStateToUserInterfaceControls.swift in Sources */,
 				C083162D2ABB7BE200603177 /* Form.swift in Sources */,
 				C00F4DB52AAFDCE400B43D16 /* CircleImage.swift in Sources */,
+				C016D24E2ABE1F30000B0C4D /* FlagList.swift in Sources */,
 				C043CECA2AAFF6C0008D0DEA /* ModelData.swift in Sources */,
 				C09E3B6E2ABB88A40058F125 /* State.swift in Sources */,
 			);

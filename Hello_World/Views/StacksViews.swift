@@ -13,7 +13,13 @@ import SwiftUI
  */
 
 struct StacksViews: View {
-    @State private var showingAlet = false
+//    @State private var showingAlet = false
+    @State private var scoreTitle = ""
+    @State private var showingScore = false
+    
+    @State private var countries: [String] = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
+
+    @State private var correctAnswer = Int.random(in: 0...2)
     
     var body: some View {
 //        LAS STACK AYUDAN A AGRUPAR VISTAS
@@ -79,36 +85,95 @@ struct StacksViews: View {
 //            LinearGradient(colors: [.white, .black], startPoint: .bottom, endPoint: .topLeading)
         
         //    ================= BUTTONS Y ALERTAS =================
-        VStack {
-            Button("button 1") {
+//        VStack {
+//            Button("button 1") {
+//            }
+//            .buttonStyle(.bordered)
+//
+//            Button("button 2", role: .destructive) {
+//
+//            }
+//            .buttonStyle(.bordered)
+//
+//            Button("button 3") {
+//
+//            }
+//            .buttonStyle(.borderedProminent) // el borderedProminent solo se debe usar una o maximo 2 veces para destacar los botones, si se usa mas de dos veces ya hay un problema porque ya no seria destacable el contenido
+//
+//            Button("Sing In") {
+//                showingAlet = true
+//            } .alert("Important message", isPresented: $showingAlet) {
+//                Button("Delete", role: .destructive) {}
+//                Button("Cancel", role: .cancel) {}
+//            } message: {
+//                Text("Please read this")
+//            }
+//        }
+        
+//        ================= EJERCICIO =================
+        ZStack {
+            RadialGradient(stops: [
+                .init(color: Color(red: 0.1, green: 0.2, blue: 0.45), location: 0.3),
+                .init(color: Color(red: 0.76, green: 0.15, blue: 0.26), location: 0.3)
+            ], center: .top, startRadius: 200, endRadius: 600)
+                .ignoresSafeArea()
+            VStack(spacing: 15) {
+                VStack {
+                    Text("Tap the flag up")
+                        .foregroundColor(.white)
+                        .font(.subheadline.weight(.heavy))
+                    Text(countries[correctAnswer])
+                        .foregroundColor(.white)
+                        .font(.largeTitle.weight(.semibold))
+                }
+
+                VStack(spacing: 20) {
+                    ForEach(0..<3) { flag in
+                        Button {
+                            flagTapped(flag)
+                        } label: {
+                            FlagImage(flag: countries[flag])
+                        }
+                    }
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 20)
+                .background(.regularMaterial)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
             }
-            .buttonStyle(.bordered)
-            
-            Button("button 2", role: .destructive) {
-                
-            }
-            .buttonStyle(.bordered)
-            
-            Button("button 3") {
-                
-            }
-            .buttonStyle(.borderedProminent) // el borderedProminent solo se debe usar una o maximo 2 veces para destacar los botones, si se usa mas de dos veces ya hay un problema porque ya no seria destacable el contenido
-            
-            Button("Sing In") {
-                showingAlet = true
-            } .alert("Important message", isPresented: $showingAlet) {
-                Button("Delete", role: .destructive) {}
-                Button("Cancel", role: .cancel) {}
+            .alert(scoreTitle, isPresented: $showingScore) {
+                Button("Continue", action: askQuestion)
             } message: {
-                Text("Please read this")
+                Text("your score is \(scoreTitle)")
             }
+            .padding()
         }
     }
     
-    func signIn () {
-        print("iniciando sesion")
+    func flagTapped (_ idx: Int) {
+        if idx == correctAnswer {
+            scoreTitle = "Correct"
+        } else {
+            scoreTitle = "Wrong"
+        }
+        showingScore = true
     }
     
+    func askQuestion () {
+        countries.shuffle()
+        correctAnswer = Int.random(in: 0...2)
+    }
+}
+
+struct FlagImage: View {
+    var flag: String
+
+    var body: some View {
+        Image(flag)
+            .renderingMode(.original)
+            .clipShape(Capsule())
+            .shadow(radius: 5)
+    }
 }
 
 struct StacksViews_Previews: PreviewProvider {
