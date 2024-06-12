@@ -31,19 +31,23 @@ struct GridStack<Content: View>: View {
 struct ContentView: View {
    
     var body: some View {
+        Exercise1()
 //        SuperHeroes()
 //        StacksViews()
-        GridStack(rows: 4, columns: 4) { row, col in
+        /*GridStack(rows: 4, columns: 4) { row, col in
             Image(systemName: "\(row * 4 + col).circle")
             Text("R\(row) C\(col)")
-        }
+        }*/
     }
 }
 
 // vista previa para la vista ContentView
-struct ContentView_Previews: PreviewProvider {
+#Preview {
+    ContentView()
+}
+/*struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(ModelData())
     }
-}
+}*/
