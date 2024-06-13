@@ -31,7 +31,8 @@ struct GridStack<Content: View>: View {
 struct ContentView: View {
    
     var body: some View {
-        Exercise1()
+        MenuView()
+        //Exercise1()
 //        SuperHeroes()
 //        StacksViews()
         /*GridStack(rows: 4, columns: 4) { row, col in

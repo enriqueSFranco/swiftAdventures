@@ -14,6 +14,7 @@ struct CircleImage: View {
         VStack {
             Image(nameImage)
                 .resizable()
+                .scaledToFit()
                 .frame(width: 150, height: 150)
                 .aspectRatio(contentMode: .fit)
                 .clipShape(Circle())
@@ -30,6 +31,6 @@ struct CircleImage: View {
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage(nameImage: "spiderman")
+        CircleImage(nameImage: "anonymous")
     }
 }
