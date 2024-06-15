@@ -36,7 +36,7 @@ struct IMCView: View {
                 CounterButton(text: "Peso", count: $weight)
             }
             NavigationStack {
-                NavigationLink(destination: {}) {
+                NavigationLink(destination: IMCResult(userHeight: height, userWeight: Double(weight))) {
                     Text("Calcular mi IMC")
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 100)
                         .background(Color("ComponentColor"))
