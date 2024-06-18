@@ -36,6 +36,7 @@
 		C0AF13742AAFE5DF00422207 /* SuperHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF13732AAFE5DF00422207 /* SuperHeroes.swift */; };
 		C0AF13762AAFE62000422207 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AF13752AAFE62000422207 /* SuperHero.swift */; };
 		C0E0EE312ACB6E0F0010823E /* BetterRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E0EE302ACB6E0F0010823E /* BetterRest.swift */; };
+		C0E490832C2113E700E84944 /* ListExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E490822C2113E700E84944 /* ListExample.swift */; };
 		C0FD91CE2ABD08E900330405 /* StacksViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FD91CD2ABD08E900330405 /* StacksViews.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		C0AF13732AAFE5DF00422207 /* SuperHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroes.swift; sourceTree = "<group>"; };
 		C0AF13752AAFE62000422207 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
 		C0E0EE302ACB6E0F0010823E /* BetterRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRest.swift; sourceTree = "<group>"; };
+		C0E490822C2113E700E84944 /* ListExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExample.swift; sourceTree = "<group>"; };
 		C0FD91CD2ABD08E900330405 /* StacksViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +204,7 @@
 				C06FC84D2C1933CF00D54A53 /* BaseText.swift */,
 				C0A6B6A92C19E8BD000922CD /* BaseLabel.swift */,
 				C0A6B6AB2C19EBF3000922CD /* BaseTextField.swift */,
+				C0E490822C2113E700E84944 /* ListExample.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				C06FC84C2C19320900D54A53 /* Exercise1.swift in Sources */,
 				C00F4D8B2AAFCBCE00B43D16 /* ContentView.swift in Sources */,
 				C01D70B22C1A7785003177C7 /* MenuView.swift in Sources */,
+				C0E490832C2113E700E84944 /* ListExample.swift in Sources */,
 				C0AF13742AAFE5DF00422207 /* SuperHeroes.swift in Sources */,
 				C02F623D2C1D1911003DD6DA /* IMCResult.swift in Sources */,
 				C00F4D892AAFCBCE00B43D16 /* Hello_WorldApp.swift in Sources */,
