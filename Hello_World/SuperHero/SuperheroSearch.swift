@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import SDWebImage
+import SDWebImageSwiftUI
 
 struct SuperheroSearch: View {
     @State var superheroName: String = ""
+    @State var listOfSuperheroes: ApiNetwork.ApiContract? = nil
     
     var body: some View {
         VStack {
@@ -20,15 +23,53 @@ struct SuperheroSearch: View {
                     .padding(8)
                     .autocorrectionDisabled()
                     .onSubmit {
-                        print("buscaste: \(superheroName)")
+                        // creamos una Task para ejecutar procesos asincronos
+                        Task {
+                            do {
+                                listOfSuperheroes = try await ApiNetwork().getHeroesByQuery(query: superheroName)
+                            }catch {
+                                print("Error")
+                            }
+                        }
                     }
             } else {
                 // Fallback on earlier versions
             }
+            List(listOfSuperheroes?.results ?? []) { superhero in
+                SuperHeroItem(superhero: superhero)
+            }
+            .listStyle(.plain) // eliminamos el fondo del list
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("BackgroundApp"))
+    }
+}
+
+struct SuperHeroItem:View {
+    let superhero: ApiNetwork.SuperHero
+    
+    var body: some View {
+        ZStack {
+            WebImage(url: ULR(string: superhero.image))
+                .resizable()
+                .indicator(.activity)
+                .scaledToFill()
+                .frame(height: 200)
+            VStack {
+                Spacer()
+                Text(superhero.name)
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .bold()
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(.white.opacity(0.1))
+            }
+        }
+        .frame(height: 200)
+        .cornerRadius(10)
+        .listRowBackground(Color("BackgroundApp"))
     }
 }
 
