@@ -23,7 +23,7 @@ final class ApiNetwork {
     }
     
     struct ImageSuperhero: Codable {
-        url: String
+        let url: String
     }
     
     struct SuperHero: Codable, Identifiable {

@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-import SDWebImage
 import SDWebImageSwiftUI
 
 struct SuperheroSearch: View {
     @State var superheroName: String = ""
     @State var listOfSuperheroes: ApiNetwork.ApiContract? = nil
+    @State var loading: Bool = false
     
     var body: some View {
         VStack {
@@ -24,21 +24,29 @@ struct SuperheroSearch: View {
                     .autocorrectionDisabled()
                     .onSubmit {
                         // creamos una Task para ejecutar procesos asincronos
+                        loading = true
                         Task {
                             do {
                                 listOfSuperheroes = try await ApiNetwork().getHeroesByQuery(query: superheroName)
                             }catch {
                                 print("Error")
                             }
+                            loading = false
                         }
                     }
             } else {
                 // Fallback on earlier versions
             }
-            List(listOfSuperheroes?.results ?? []) { superhero in
-                SuperHeroItem(superhero: superhero)
+            if loading { ProgressView().tint(.white) }
+            NavigationStack {
+                List(listOfSuperheroes?.results ?? []) { superhero in
+                    NavigationLink(destination: SuperHeroItemDetail(superhero: superhero)) {
+                        SuperHeroItem(superhero: superhero)
+                    }
+                }
+                .listStyle(.plain) // eliminamos el fondo del list
             }
-            .listStyle(.plain) // eliminamos el fondo del list
+            
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -46,12 +54,23 @@ struct SuperheroSearch: View {
     }
 }
 
-struct SuperHeroItem:View {
+struct SuperHeroItemDetail: View {
+    let superhero: ApiNetwork.SuperHero
+    
+    var body: some View {
+        VStack {
+            Text(superhero.name)
+        }
+        .navigationTitle(superhero.name)
+    }
+}
+
+struct SuperHeroItem: View {
     let superhero: ApiNetwork.SuperHero
     
     var body: some View {
         ZStack {
-            WebImage(url: ULR(string: superhero.image))
+            WebImage(url: URL(string: superhero.image.url))
                 .resizable()
                 .indicator(.activity)
                 .scaledToFill()
